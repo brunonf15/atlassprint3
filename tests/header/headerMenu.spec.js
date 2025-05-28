@@ -3,7 +3,7 @@ const LoginPage = require('../../pages/LoginPage');
 const HeaderPage = require('../../pages/HeaderPage');
 
 test(' open header menu ', async ({ page }) => {
-  await page.goto('https://app.go2atlas.com/version-test/account_login?lang=pt_br');
+  await page.goto('/account_login?lang=pt_br');
   const loginPage = new LoginPage(page);
   const headerpage = new HeaderPage(page);
 

@@ -2,7 +2,7 @@
 const LoginPage = require('../../pages/LoginPage');
 
 test(' Valid Login ', async ({ page }) => {
-  await page.goto('https://app.go2atlas.com/version-test/account_login?lang=pt_br');
+  await page.goto('/account_login?lang=pt_br');
   const loginPage = new LoginPage(page);
 
   await loginPage.registrationLogin('hostingdazh@gmail.com', 'Dazh2020$');
